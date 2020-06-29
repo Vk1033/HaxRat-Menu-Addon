@@ -29,7 +29,7 @@ https://github.com/Hax4us/TermuxBlack
 Just run command
 
 
-`wget https://github.com/Vansh1033/HaxRat-Menu-Addon/blob/master/haxm && chmod +x haxm && ./haxm && haxm`
+`wget https://raw.githubusercontent.com/Vansh1033/HaxRat-Menu-Addon/master/haxm && chmod +x haxm && ./haxm && haxm`
 
 ### HOW TO RUN
 
