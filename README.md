@@ -7,7 +7,7 @@ and Auto-Launch haxrat control panel Feature
 
 
 
-#REQUIREMENTS
+###REQUIREMENTS
 
    1)wget
    
@@ -24,7 +24,7 @@ https://github.com/Hax4us/TermuxBlack
 
 
 
-#HOW TO INSTALL
+###HOW TO INSTALL
 
 Just run command
 
@@ -32,7 +32,7 @@ Just run command
 `wget https://github.com/Vansh1033/HaxRat-Menu-Addon/blob/master/haxm && ./haxm && haxm`
 
 
-#CREDITS
+###CREDITS
 
 
 
