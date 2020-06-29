@@ -30,6 +30,8 @@ Just run command
 
 
 `wget https://github.com/Vansh1033/HaxRat-Menu-Addon/blob/master/haxm && ./haxm && haxm`
+
+
 #CREDITS
 
 
