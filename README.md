@@ -6,13 +6,13 @@ and Auto-Launch haxrat control panel Feature
 
 REQUIREMENTS
 
-1) wget
+   1) wget
 apt install wget
 
-2)Termux Black
+   2)Termux Black
 https://github.com/Hax4us/TermuxBlack
 
-3HaxRat
+   3)HaxRat
 (After installing Termux Black)
 apt install haxrat
 
