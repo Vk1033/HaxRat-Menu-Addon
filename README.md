@@ -15,8 +15,8 @@ https://github.com/Hax4us/TermuxBlack
 
    3)HaxRat
 (After installing Termux Black)
-`apt install haxrat'
 
+`apt install haxrat`
 
 #HOW TO INSTALL
 
