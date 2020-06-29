@@ -23,6 +23,7 @@ Just run command
 
 CREDITS
 @Hax4us for making HaxRat
+
 @Vk1033 for Menu Addon
 
 
