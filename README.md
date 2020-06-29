@@ -30,7 +30,8 @@ Just run command
 
 ### HOW TO RUN
 
-Type 'haxm'
+Type 
+`haxm`
 
 `wget https://github.com/Vansh1033/HaxRat-Menu-Addon/blob/master/haxm && ./haxm && haxm`
 
